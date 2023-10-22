@@ -3,11 +3,12 @@
 int main (void){
     int i, num;
     printf("Ingrese un numero entero\n");
-    scanf("%d", num);
+    scanf("%d", &num);
 
-    for (i=0; i<= num; i++){
+    printf("Los componentes numericos de %d son:\n", num);
+    for (i=1; i<= num; i++){
         if(num % i == 0){
-            printf("%d", i);
+            printf("%d\n", i);
         }
     }
 }
