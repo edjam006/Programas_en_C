@@ -83,8 +83,11 @@ int main(void){
     printf("Saliendo...\n");
 
     default:
+        if (opc != 6){
         printf("La opcion ingresada no esta dentro de las opciones\n");
+        }
         break;
     }
     } while (opc != 6);
+
 }
