@@ -11,17 +11,17 @@ int main (void){
             digito= num % 10;
             if (digito == 1){
                 num1= 1;
-            } else {
-                num1= 0;
-            }
+                break;
+            } 
+            
         } while (num > 0);
-       
+        if (num1){
+            printf("El numero si tiene el digito 1.\n");
+        } else {
+            printf("El numero no tiene digito 1.\n");
+        }
+
     } else {
         printf("El numero ingresado no cumple la condicion de 3 digitos\n");
-    }
-    if (num1 == 1){
-         printf("El numero si tiene el digito 1.\n");
-    } else {
-            printf("El numero no tiene digito 1.\n");
     }
 }
